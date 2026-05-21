@@ -7,3 +7,17 @@
   display: flex;
   justify-content: center;
 }
+
+.cabecalho__ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.cabecalho__ul li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.cabecalho__ul li a.active {
+  text-decoration: underline;
+}
