@@ -5,19 +5,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contato — SoulUp</title>
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main.css" />
+  <script src="../js/contato.js" defer></script>
 </head>
 
 <body>
   <header class="cabecalho">
     <a class="cabecalho__logo" href="../index.html">SoulUp | Ecoloop</a>
     <nav class="cabecalho__nav">
-      <ul class="cabecalho__ul"> 
+      <ul class="cabecalho__ul">
         <li><a class="cabecalho__a" href="../index.html">Home</a></li>
         <li><a class="cabecalho__a" href="./sobre.html">Sobre</a></li>
         <li><a class="cabecalho__a" href="./integrantes.html">Integrantes</a></li>
         <li><a class="cabecalho__a" href="./faq.html">FAQ</a></li>
-        <li><a class="cabecalho__a cabecalho_a--active" href="./contato.html">Contato</a></li>
+        <li><a class="cabecalho__a cabecalho__a--active" href="./contato.html">Contato</a></li>
         <li><a class="cabecalho__a" href="./transporte.html">Converter pontos</a></li>
       </ul>
     </nav>
@@ -30,7 +31,32 @@
         <p class="hero__txt">Dúvidas? Fale conosco, envie uma mensagem.</p>
       </div>
     </section>
-      </main>
+
+    <section class="conteudo__contato">
+      <article class="conteudo__sec">
+        <form id="formContato" class="transporte__form" novalidate>
+          <label for="nomeContato">Nome</label>
+          <input id="nomeContato" type="text" required />
+
+          <label for="emailContato">Email</label>
+          <input id="emailContato" type="email" required />
+
+          <label for="mensagemContato">Mensagem</label>
+          <textarea id="mensagemContato" rows="5" required></textarea>
+
+          <div class="transporte__actions">
+            <button type="submit" class="hero__btn">Enviar</button>
+          </div>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <dialog id="mensagemModal" class="modal">
+    <button id="fecharMensagem" aria-label="Fechar">X</button>
+    <div id="mensagemContent"></div>
+  </dialog>
+
 
   <footer class="footer">
     <p>&copy; SoulUp — Projeto Challenge 2026</p>
