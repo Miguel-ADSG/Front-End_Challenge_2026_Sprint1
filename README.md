@@ -101,8 +101,8 @@ Informe os pontos → Selecione o benefício → Simule → Confirme → Receba 
 
 ## 📬 Contato
 
-Para dúvidas ou suporte, utilize o [formulário de contato](./pages/contato.html) disponível no próprio site ou entre em contato com qualquer membro da equipe pelos links acima.
+Para dúvidas ou suporte, utilize o **Email: martins.miguelvieira@gmail.com** ou **Número: +55 11 99868-6507** disponível no próprio site ou entre em contato com qualquer membro da equipe pelos links acima.
 
 ---
 
-<p align="center">© SoulUp — Ecoloop 2026 | FIAP — Front-End Design Engineering</p>
+<p align="center">© SoulUp — Ecoloop 2026</p>
