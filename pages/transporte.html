@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>SoulUp — Conversão de Pontos em Transporte</title>
   <link rel="stylesheet" href="../css/main.css" />
+  <script src="../js/conversao.js" defer></script>
 </head>
 
 <body>
   <header class="cabecalho">
-
     <a class="cabecalho__logo" href="../index.html">SoulUp | Ecoloop</a>
     <nav class="cabecalho__nav">
       <ul class="cabecalho__ul">
@@ -19,7 +19,8 @@
         <li><a class="cabecalho__a" href="./integrantes.html">Integrantes</a></li>
         <li><a class="cabecalho__a" href="./faq.html">FAQ</a></li>
         <li><a class="cabecalho__a" href="./contato.html">Contato</a></li>
-        <li><a class="cabecalho_a cabecalho_a--active" href="./transporte.html">Converter pontos</a></li>
+        <li><a class="cabecalho__a cabecalho__a--active" href="./transporte.html">Converter
+            pontos</a></li>
       </ul>
     </nav>
   </header>
@@ -28,11 +29,61 @@
     <section class="hero">
       <div class="hero__container">
         <h1 class="hero__tit">Converter pontos em crédito de transporte</h1>
-        <p class="hero__txt">Veja a conversão dos seus pontos, escolha o tipo de benefício e veja o impacto estimado de CO₂ evitado.
+        <p class="hero__txt">Veja a conversão dos seus pontos, escolha o tipo de benefício e veja o impacto estimado de
+          CO₂ evitado.
         </p>
       </div>
     </section>
+
+    <section class="conteudo__container transporte__container">
+      <div class="transporte__card">
+        <h2 class="transporte__tit">Conversão de Pontos</h2>
+
+        <form id="formConversao" class="transporte__form" novalidate>
+          <label for="inputPontos">Pontos disponíveis</label>
+          <input id="inputPontos" type="number" min="0" step="1" placeholder="Ex: 1200" required />
+
+          <label for="selectTipo">Tipo de benefício</label>
+          <select id="selectTipo" required>
+            <option value="">Selecione</option>
+            <option value="voucher">Voucher (boleto/QR)</option>
+            <option value="integracao">Crédito direto (integração bilhetagem)</option>
+          </select>
+
+          <label for="inputValorUnit">Valor por 100 pontos (R$)</label>
+          <input id="inputValorUnit" type="number" min="0" step="0.01" value="1.00" required />
+
+          <div class="transporte__actions">
+            <button id="btnSimular" type="submit" class="hero__btn">Simular</button>
+            <button id="btnLimpar" type="button" class="hero__btn">Limpar</button>
+          </div>
+        </form>
+
+        <div id="resultado" class="transporte__resultado" aria-live="polite"></div>
+      </div>
+
+      <aside class="transporte__info">
+        <h3>Como funciona a conversão</h3>
+        <ol>
+          <li>Usuário informa pontos.</li>
+          <li>Simulador calcula valor e sugere voucher ou integração.</li>
+          <li>Na conversão real, há verificação antifraude e geração de voucher ou pedido de integração.</li>
+        </ol>
+
+        <h4>Regras de negócio (exemplo)</h4>
+        <ul>
+          <li>Conversão mínima: 100 pontos.</li>
+          <li>Taxa de processamento: 2% (simulada).</li>
+          <li>Valor por 100 pontos: configurável (campo acima).</li>
+        </ul>
+      </aside>
+    </section>
   </main>
+
+  <dialog id="modalConfirm" class="modal">
+    <button id="modalClose" aria-label="Fechar">X</button>
+    <div id="modalContent"></div>
+  </dialog>
 
   <footer class="footer">
     <p>&copy; SoulUp — Projeto Challenge 2026</p>

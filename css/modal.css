@@ -1,0 +1,36 @@
+.modal {
+  position: fixed;          
+  top: 50%;                 
+  left: 50%;                
+  transform: translate(-50%, -50%); 
+  padding: 1.6rem;
+  border-radius: 8px;
+  border: none;
+  max-width: 60rem;
+  width: 90%;
+  text-align: center; 
+  font-size: 1.4rem;
+}
+
+.modal button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal.success {
+  background: #e6ffe6;
+  color: #0a0;
+  border: 2px solid #0a0;
+}
+
+.modal.danger {
+  background: #ffe6e6;
+  color: #a00;
+  border: 2px solid #d00;
+}
