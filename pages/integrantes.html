@@ -5,20 +5,38 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Integrantes — SoulUp</title>
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main.css" />
+  <script src="../js/script.js" defer></script>
 </head>
 
 <body>
   <header class="cabecalho">
+
+    <div id="mobileToggle" class="mobile-toggle" role="button" aria-haspopup="true" aria-expanded="false" tabindex="0">
+      Menu <span class="mobile-caret">▾</span>
+    </div>
+    <div id="mobileDropdown" class="mobile-dropdown" aria-hidden="true">
+
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./integrantes.html">Integrantes</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+        <li><a href="./transporte.html">Solução Transporte</a></li>
+      </ul>
+    </div>
+
     <a class="cabecalho__logo" href="../index.html">SoulUp | Ecoloop</a>
     <nav class="cabecalho__nav">
       <ul class="cabecalho__ul">
-        <li><a class="cabecalho__a" href="../index.html">Home</a></li>
-        <li><a class="cabecalho__a" href="./sobre.html">Sobre</a></li>
-        <li><a class="cabecalho__a cabecalho_a--active" href="./integrantes.html">Integrantes</a> </li>
-        <li><a class="cabecalho__a" href="./faq.html">FAQ</a></li>
-        <li><a class="cabecalho__a" href="./contato.html">Contato</a></li>
-        <li><a class="cabecalho__a" href="./transporte.html">Converter pontos</a></li>
+        <li class="cabecalho__li"><a class="cabecalho__a" href="../index.html">Home</a></li>
+        <li class="cabecalho__li"><a class="cabecalho__a" href="./sobre.html">Sobre</a></li>
+        <li class="cabecalho__li"><a class="cabecalho__a cabecalho__a--active" href="./integrantes.html">Integrantes</a>
+        </li>
+        <li class="cabecalho__li"><a class="cabecalho__a" href="./faq.html">FAQ</a></li>
+        <li class="cabecalho__li"><a class="cabecalho__a" href="./contato.html">Contato</a></li>
+        <li class="cabecalho__li"><a class="cabecalho__a" href="./transporte.html">Converter pontos</a></li>
       </ul>
     </nav>
   </header>
@@ -32,7 +50,7 @@
     </section>
 
     <section class="conteudo__container">
-     <article class="conteudo__sec">
+      <article class="conteudo__sec">
         <h2 class="conteudo__tit">Miguel Vieira</h2>
         <p class="conteudo__txt">RM: 123456</p>
         <p class="conteudo__txt"><a href="#">GitHub</a> | <a href="#">LinkedIn</a></p>
@@ -43,7 +61,6 @@
         <p class="conteudo__txt">RM: 123456</p>
         <p class="conteudo__txt"><a href="#">GitHub</a> | <a href="#">LinkedIn</a></p>
       </article>
-    </section>
   </main>
 
   <footer class="footer">

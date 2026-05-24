@@ -6,20 +6,36 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Sobre — SoulUp</title>
   <link rel="stylesheet" href="../css/main.css" />
+  <script src="../js/mobile.js" defer></script>
 </head>
 
 <body>
   <header class="cabecalho">
 
+    <div id="mobileToggle" class="mobile-toggle" role="button" aria-haspopup="true" aria-expanded="false" tabindex="0">
+      Menu <span class="mobile-caret">▾</span>
+    </div>
+    <div id="mobileDropdown" class="mobile-dropdown" aria-hidden="true">
+
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./integrantes.html">Integrantes</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+        <li><a href="./transporte.html">Converter pontos</a></li>
+      </ul>
+    </div>
+
     <a class="cabecalho__logo" href="../index.html">SoulUp | Ecoloop</a>
     <nav class="cabecalho__nav">
       <ul class="cabecalho__ul">
-        <li><a class="cabecalho_a" href="../index.html">Home</a></li>
-        <li><a class="cabecalhoa cabecalho_a--active" href="./sobre.html">Sobre</a></li>
-        <li><a class="cabecalho_a" href="./integrantes.html">Integrantes</a></li>
-        <li><a class="cabecalho_a" href="./faq.html">FAQ</a></li>
-        <li><a class="cabecalho_a" href="./contato.html">Contato</a></li>
-        <li><a class="cabecalho_a" href="./transporte.html">Converter pontos</a></li>
+        <li class="cabecalho__li"><a class="cabecalho__a" href="../index.html">Home</a></li>
+        <li class="cabecalho__li"><a class="cabecalho__a cabecalho__a--active" href="./sobre.html">Sobre</a></li>
+        <li class="cabecalho__li"><a class="cabecalho__a" href="./integrantes.html">Integrantes</a></li>
+        <li class="cabecalho__li"><a class="cabecalho__a" href="./faq.html">FAQ</a></li>
+        <li class="cabecalho__li"><a class="cabecalho__a" href="./contato.html">Contato</a></li>
+        <li class="cabecalho__li"><a class="cabecalho__a" href="./transporte.html">Converter pontos</a></li>
       </ul>
     </nav>
   </header>
@@ -44,6 +60,43 @@
           para acessar oportunidades por limitações no deslocamento. Programas de recompensa que convertem pontos em
           crédito de transporte atuam como um incentivo direto ao uso do transporte coletivo, promovendo inclusão social
           e reduzindo a dependência do transporte individual motorizado.</p>
+      </article>
+
+      <article class="conteudo__sec">
+        <h2 class="conteudo__tit">Solução proposta</h2>
+        <p class="conteudo__txt">A solução começa com um MVP baseado em vouchers e códigos QR que o usuário recebe
+          imediatamente após a conversão, garantindo rapidez de implementação e compatibilidade com parceiros que
+          aceitam vouchers. Paralelamente, a evolução prevê integração direta com sistemas de bilhetagem por meio de
+          APIs seguras, permitindo solicitar crédito na conta do usuário junto às operadoras. Entre essas etapas,
+          implementamos uma camada robusta de antifraude e compliance que aplica regras de negócio, limites e detecção
+          de padrões suspeitos, com fluxo de revisão manual quando necessário. Para o usuário, o fluxo é simples:
+          simular a conversão, visualizar valor bruto, taxa e valor líquido, escolher entre voucher ou integração,
+          passar pela validação antifraude e receber o voucher ou a confirmação do crédito — tudo registrado no painel
+          com histórico e comprovantes.</p>
+      </article>
+
+      <article class="conteudo__sec">
+        <h2 class="conteudo__tit">Tecnologias recomendadas</h2>
+        <p class="conteudo__txt">No front-end, HTML/CSS responsivo com atenção à acessibilidade e, quando necessário, um
+          framework leve (React ou Vue) para interatividade. No back-end, uma API RESTful (Node.js ou Python/FastAPI)
+          para simulação, criação de pedidos e integração com parceiros; autenticação baseada em OAuth2/JWT e MFA para
+          operações sensíveis. Integrações com bilhetagem devem usar APIs seguras e processamento assíncrono via filas
+          (RabbitMQ/Kafka) com mecanismos de retry e idempotência. Persistência em banco relacional (Postgres) para
+          transações e um stack de observability (logs em ELK/Loki, métricas em Prometheus/Grafana, tracing com
+          OpenTelemetry). A infraestrutura recomenda containers (Docker) orquestrados por Kubernetes ou PaaS, CI/CD,
+          backups automatizados e criptografia/TLS para todas as comunicações, além de políticas de retenção e
+          conformidade com LGPD.</p>
+      </article>
+
+      <article class="conteudo__sec">
+        <h2 class="conteudo__tit">Roadmap</h2>
+        <p class="conteudo__txt">O desenvolvimento segue fases claras: planejamento inicial para definir requisitos,
+          regras de negócio, parceiros e KPIs; lançamento do MVP com simulador e geração de vouchers em semanas;
+          implementação da camada antifraude e operações com fila de revisão manual em 1-2 meses após o MVP; piloto de
+          integração com 1-2 operadoras de bilhetagem em 2-4 meses, com processamento assíncrono e testes em sandbox; e,
+          por fim, escala contínua com onboarding de múltiplos parceiros, otimização de performance e dashboards de
+          impacto para prefeituras. A operação posterior foca em monitoramento, melhorias de UX e novos produtos, como
+          subsídios direcionados ou internacionalização.</p>
       </article>
     </section>
   </main>
