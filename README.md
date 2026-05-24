@@ -65,11 +65,11 @@ Projeto desenvolvido pela turma **1-TDSPG | Paulista — FIAP**
 
 | Nome | RM | GitHub | LinkedIn |
 |---|---|---|---|
-| Miguel Vieira Martins | 571978 | [Miguel-ADSG](https://github.com/Miguel-ADSG) | [linkedin](https://www.linkedin.com/in/miguel-vieira-martins-598964406) |
-| Gustavo Neri Andrade | 572722 | [GustavoNeriAndrade](https://github.com/GustavoNeriAndrade) | [linkedin](https://www.linkedin.com/in/gustavo-neri-andrade-163795337) |
-| Thiago Vendrami Luca | 572942 | [Thiagovluca](https://github.com/Thiagovluca) | [linkedin](https://br.linkedin.com/in/thiago-vendrami-luca-4892a6409) |
-| Carlos Americo Machado Brambilla | 571250 | [CarlosAmericoMachado](https://github.com/CarlosAmericoMachado) | [linkedin](https://www.linkedin.com/in/carlos-brambilla-b5b971407) |
-| Murilo da Silva Lourenço | 573959 | [murilojosh](https://github.com/murilojosh) | [linkedin](https://www.linkedin.com/in/murilo-lourenço-35250b411) |
+| <img src="img/Miguel.jpeg" width="80" height="80" style="border-radius:50%"> | Miguel Vieira Martins | 571978 | [Miguel-ADSG](https://github.com/Miguel-ADSG) | [linkedin](https://www.linkedin.com/in/miguel-vieira-martins-598964406) |
+| <img src="img/Gustavo.jpeg" width="80" height="80" style="border-radius:50%"> | Gustavo Neri Andrade | 572722 | [GustavoNeriAndrade](https://github.com/GustavoNeriAndrade) | [linkedin](https://www.linkedin.com/in/gustavo-neri-andrade-163795337) |
+| <img src="img/Thiago.jpeg" width="80" height="80" style="border-radius:50%"> | Thiago Vendrami Luca | 572942 | [Thiagovluca](https://github.com/Thiagovluca) | [linkedin](https://br.linkedin.com/in/thiago-vendrami-luca-4892a6409) |
+| <img src="img/Carlos.jpeg" width="80" height="80" style="border-radius:50%"> | Carlos Americo Machado Brambilla | 571250 | [CarlosAmericoMachado](https://github.com/CarlosAmericoMachado) | [linkedin](https://www.linkedin.com/in/carlos-brambilla-b5b971407) |
+| <img src="img/Murilo.jpeg" width="80" height="80" style="border-radius:50%"> | Murilo da Silva Lourenço | 573959 | [murilojosh](https://github.com/murilojosh) | [linkedin](https://www.linkedin.com/in/murilo-lourenço-35250b411) |
 
 ---
 
