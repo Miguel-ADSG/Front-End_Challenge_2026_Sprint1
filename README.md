@@ -1,108 +1,75 @@
-# SoulUp | Ecoloop 🌿
+# React + TypeScript + Vite
 
-Plataforma que transforma pontos acumulados pelos usuários em benefícios reais de mobilidade urbana — com foco em segurança, transparência e impacto ambiental positivo.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## 📋 Descrição do Projeto
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-A **SoulUp | Ecoloop** permite que usuários convertam pontos em créditos de transporte público, escolhendo entre **vouchers (QR/boleto)** ou **crédito direto via integração com sistemas de bilhetagem**. O simulador exibe valor bruto, taxa de processamento e valor líquido antes de qualquer confirmação, além de estimar o impacto de CO₂ evitado com cada conversão.
+## React Compiler
 
----
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## 🛠️ Tecnologias Utilizadas
+## Expanding the ESLint configuration
 
-| Tecnologia | Uso |
-|---|---|
-| HTML5 | Estrutura das páginas |
-| CSS3 | Estilização e responsividade |
-| JavaScript (ES6+) | Interatividade, validações e simulador de conversão |
-| CSS Grid & Flexbox | Layout responsivo |
-| Dialog API (nativa) | Modais de feedback |
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
----
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-## 📁 Estrutura de Pastas
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
-```
-FRONT-END_CHALLENGE_2026_SPRINT1/
-├── css/
-│   ├── base.css          # Reset e variáveis globais
-│   ├── cabecalho.css     # Estilos do cabeçalho/navegação
-│   ├── conteudo.css      # Grid de cards de conteúdo
-│   ├── footer.css        # Rodapé
-│   ├── hero.css          # Seção hero/banner
-│   ├── main.css          # Importa todos os módulos CSS
-│   ├── mobile.css        # Menu dropdown mobile
-│   ├── modal.css         # Modais de feedback
-│   └── transporte.css    # Layout da página de conversão
-├── img/
-│   ├── Carlos.jpeg
-│   ├── Gustavo.jpeg
-│   ├── Miguel.jpeg
-│   ├── Murilo.jpeg
-│   └── Thiago.jpeg
-├── js/
-│   ├── contato.js        # Validação e envio do formulário de contato
-│   ├── conversao.js      # Simulador de conversão de pontos
-│   └── mobile.js         # Menu hamburguer para mobile
-├── pages/
-│   ├── contato.html      # Página de contato
-│   ├── faq.html          # Perguntas frequentes
-│   ├── integrantes.html  # Equipe desenvolvedora
-│   ├── sobre.html        # Sobre o projeto
-│   └── transporte.html   # Simulador de conversão de pontos
-├── .gitignore
-├── index.html            # Página inicial
-└── README.md
-```
-
----
-
-## 👨‍💻 Autores e Créditos
-
-Projeto desenvolvido pela turma **1-TDSPG | Paulista — FIAP**
-
-| Nome | RM | GitHub | LinkedIn |
-|---|---|---|---|
-| <img src="img/Miguel.jpeg" width="80" height="80" style="border-radius:50%"> | Miguel Vieira Martins | 571978 | [Miguel-ADSG](https://github.com/Miguel-ADSG) | [linkedin](https://www.linkedin.com/in/miguel-vieira-martins-598964406) |
-| <img src="img/Gustavo.jpeg" width="80" height="80" style="border-radius:50%"> | Gustavo Neri Andrade | 572722 | [GustavoNeriAndrade](https://github.com/GustavoNeriAndrade) | [linkedin](https://www.linkedin.com/in/gustavo-neri-andrade-163795337) |
-| <img src="img/Thiago.jpeg" width="80" height="80" style="border-radius:50%"> | Thiago Vendrami Luca | 572942 | [Thiagovluca](https://github.com/Thiagovluca) | [linkedin](https://br.linkedin.com/in/thiago-vendrami-luca-4892a6409) |
-| <img src="img/Carlos.jpeg" width="80" height="80" style="border-radius:50%"> | Carlos Americo Machado Brambilla | 571250 | [CarlosAmericoMachado](https://github.com/CarlosAmericoMachado) | [linkedin](https://www.linkedin.com/in/carlos-brambilla-b5b971407) |
-| <img src="img/Murilo.jpeg" width="80" height="80" style="border-radius:50%"> | Murilo da Silva Lourenço | 573959 | [murilojosh](https://github.com/murilojosh) | [linkedin](https://www.linkedin.com/in/murilo-lourenço-35250b411) |
-
----
-
-## 🖼️ Representação do Projeto
-
-### Páginas disponíveis
-
-- **Home** — apresentação da plataforma e chamada para conversão
-- **Sobre** — contexto, solução proposta, tecnologias e roadmap
-- **Integrantes** — equipe desenvolvedora com foto e links
-- **FAQ** — dúvidas frequentes sobre conversão de pontos
-- **Contato** — formulário de contato com validação e feedback via modal
-- **Converter Pontos** — simulador completo com cálculo de taxa, valor líquido e impacto de CO₂
-
-### Fluxo de conversão
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 
 ```
-Informe os pontos → Selecione o benefício → Simule → Confirme → Receba voucher ou crédito
+
+You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+
 ```
-
----
-
-## 🔗 Repositório
-
-> Link do repositório no GitHub:
-> https://github.com/Miguel-ADSG/Front-End_Challenge_2026_Sprint1.git
-
----
-
-## 📬 Contato
-
-Para dúvidas ou suporte, utilize o **Email: martins.miguelvieira@gmail.com** ou **Número: +55 11 99868-6507** disponível no próprio site ou entre em contato com qualquer membro da equipe pelos links acima.
-
----
-
-<p align="center">© SoulUp — Ecoloop 2026</p>
