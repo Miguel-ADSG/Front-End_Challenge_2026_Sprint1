@@ -124,13 +124,13 @@ Projeto desenvolvido pela turma **1-TDSPI | EcoLoop | Paulista — FIAP**
 ## 🖼️ Imagens e Ícones do Projeto
 
 - Fotos reais da equipe em `src/assets/img/`, exibidas na página Integrantes e neste README.
+- Fotos do projeto em `src/assets/img`, são exibidos nesse README logo abaixo.
 - Ícones de interface via **React Icons** (`react-icons/fi` e `react-icons/fa`): menu mobile, GitHub/LinkedIn, status de missão (concluída/pendente), fechar modal, voltar, lixeira do histórico.
 - Favicon em `public/favicon.svg`.
 
-### Capturas de tela
-
 <img src="src/assets/img/Home.png" align="center" width="700">
-
+<img src="src/assets/img/Missoes.png" align="center" width="700">
+<img src="src/assets/img/Conversor.png" align="center" width="700">
 
 ---
 
