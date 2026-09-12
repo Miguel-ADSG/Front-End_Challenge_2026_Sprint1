@@ -150,9 +150,12 @@ Projeto desenvolvido pela turma **1-TDSPI | EcoLoop | Paulista — FIAP**
 
 ### Passo a passo
 ```bash
-# 1. Clone o repositório
+# 1. Clone o repositório, e abrir com VScode
 git clone https://github.com/Miguel-V-M-dev/Front-End_Challenge_2026_SoulUp.git
-cd FFront-End_Challenge_2026_SoulUp
+
+cd Front-End_Challenge_2026_SoulUp
+
+code .
 
 # 2. Instale as dependências
 npm install
