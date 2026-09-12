@@ -129,12 +129,14 @@ Projeto desenvolvido pela turma **1-TDSPI | EcoLoop | Paulista — FIAP**
 - Favicon em `public/favicon.svg`.
 
 ---
+## Home
 <img src="src/assets/img/Home.png" align="center" width="700">
 
+## Missões
 <img src="src/assets/img/Missoes.png" align="center" width="700">
 
+## Conversor De Pontos
 <img src="src/assets/img/Conversor.png" align="center" width="700">
----
 
 ---
 
