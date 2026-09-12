@@ -152,7 +152,7 @@ npm run dev
 ```
 
 ### Link do repositório no GitHub
-> hhttps://github.com/Miguel-V-M-dev/Front-End_Challenge_2026_SoulUp.git
+> https://github.com/Miguel-V-M-dev/Front-End_Challenge_2026_SoulUp.git
 ### Link do vídeo no YouTube
 > 
 ---
