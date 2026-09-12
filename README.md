@@ -38,8 +38,11 @@ Front-End_Challenge_2026_SoulUp/
 │   ├── assets/
 │   │   └── img/
 │   │       ├── Carlos.jpeg
+│   │       ├── Conversor.png
 │   │       ├── Gustavo.jpeg
+│   │       ├── Home.png
 │   │       ├── Miguel.jpeg
+│   │       ├── Missoes.png
 │   │       ├── Murilo.jpeg
 │   │       └── Thiago.jpeg
 │   ├── components/
