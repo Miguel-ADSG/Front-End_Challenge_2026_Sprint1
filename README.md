@@ -127,7 +127,13 @@ Projeto desenvolvido pela turma **1-TDSPI | EcoLoop | Paulista — FIAP**
 - Ícones de interface via **React Icons** (`react-icons/fi` e `react-icons/fa`): menu mobile, GitHub/LinkedIn, status de missão (concluída/pendente), fechar modal, voltar, lixeira do histórico.
 - Favicon em `public/favicon.svg`.
 
-> 
+### Capturas de tela
+
+<p align="center">
+  <img src="src/assets/img/Home.png" width="700"><br>
+  <sub>Home</sub>
+</p>
+
 
 ---
 
