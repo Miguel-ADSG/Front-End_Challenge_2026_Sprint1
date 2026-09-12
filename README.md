@@ -113,7 +113,7 @@ Projeto desenvolvido pela turma **1-TDSPI | EcoLoop | Paulista — FIAP**
 
 | Foto | Nome | RM | Turma | GitHub | LinkedIn |
 |---|---|---|---|---|---|
-| <img src="src/assets/img/Miguel.jpeg" width="64" height="64" style="border-radius:50%"> | Miguel Vieira Martins | 571978 | 1-TDSPI | [Miguel-ADSG](https://github.com/Miguel-ADSG) | [perfil](https://www.linkedin.com/in/miguel-vieira-martins-598964406) |
+| <img src="src/assets/img/Miguel.jpeg" width="64" height="64" style="border-radius:50%"> | Miguel Vieira Martins | 571978 | 1-TDSPI | [Miguel-V-M-dev](https://github.com/Miguel-V-M-dev) | [perfil](https://www.linkedin.com/in/miguel-vieira-martins-598964406) |
 | <img src="src/assets/img/Gustavo.jpeg" width="64" height="64" style="border-radius:50%"> | Gustavo Neri Andrade | 572722 | 1-TDSPI | [GustavoNeriAndrade](https://github.com/GustavoNeriAndrade) | [perfil](https://www.linkedin.com/in/gustavo-neri-andrade-163795337) |
 | <img src="src/assets/img/Thiago.jpeg" width="64" height="64" style="border-radius:50%"> | Thiago Vendrami Luca | 572942 | 1-TDSPI | [Thiagovluca](https://github.com/Thiagovluca) | [perfil](https://br.linkedin.com/in/thiago-vendrami-luca-4892a6409) |
 | <img src="src/assets/img/Carlos.jpeg" width="64" height="64" style="border-radius:50%"> | Carlos Americo Machado Brambilla | 571250 | 1-TDSPI | [CarlosAmericoMachado](https://github.com/CarlosAmericoMachado) | [perfil](https://www.linkedin.com/in/carlos-brambilla-b5b971407) |
