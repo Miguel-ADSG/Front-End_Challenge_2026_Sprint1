@@ -129,10 +129,7 @@ Projeto desenvolvido pela turma **1-TDSPI | EcoLoop | Paulista — FIAP**
 
 ### Capturas de tela
 
-<p align="center">
-  <img src="src/assets/img/Home.png" width="700"><br>
-  <sub>Home</sub>
-</p>
+<img src="src/assets/img/Home.png" align="center" width="700">
 
 
 ---
